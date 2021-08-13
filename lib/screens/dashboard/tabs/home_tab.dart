@@ -508,7 +508,7 @@ class WaitingRoomCard extends StatelessWidget {
 
                         if (updateAppointments != null) {
                           if (updateAppointments["error"] != null) {
-                            Scaffold.of(context).showSnackBar(SnackBar(
+                            ScaffoldMessenger.of(context).showSnackBar(SnackBar(
                                 content: Text(updateAppointments["error"])));
                           }
                           if (updateAppointments["appointment"] != null) {
@@ -520,7 +520,7 @@ class WaitingRoomCard extends StatelessWidget {
                             //reload data
                             getAppointmentsData();
                             // show scnackbar
-                            Scaffold.of(context).showSnackBar(const SnackBar(
+                            ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
                                 content: Text(
                                     'Something went wrong! Please try again later.')));
                           }

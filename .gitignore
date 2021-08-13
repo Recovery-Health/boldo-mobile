@@ -13,7 +13,7 @@ ios/build
 .buildlog/
 .history
 .svn/
-.env*
+#.env*
 # IntelliJ related
 *.iml
 *.ipr

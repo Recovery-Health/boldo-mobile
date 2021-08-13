@@ -212,7 +212,7 @@ class _VideoCallState extends State<VideoCall> {
 
   void switchCamera() {
     if (localStream == null) return;
-    localStream.getVideoTracks()[0].switchCamera();
+    Helper.switchCamera(localStream.getVideoTracks()[0]);
   }
 
   void muteMic() {
